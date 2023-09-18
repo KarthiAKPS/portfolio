@@ -86,7 +86,7 @@
           </section>
 
           <!-- Section -->
-          <section>
+          <section id="abt-me">
             <header class="major">
               <h2>About me</h2>
             </header>
@@ -144,10 +144,7 @@
             </div>
             <ul class="actions">
               <li>
-                <a
-                  href="/about.html"
-                  style="margin-top: 40px"
-                  class="button big"
+                <a href="about.html" style="margin-top: 40px" class="button big"
                   >Learn More</a
                 >
               </li>
@@ -155,7 +152,7 @@
           </section>
 
           <!-- Section -->
-          <section>
+          <section id="projects">
             <header class="major">
               <h2>My Projects</h2>
             </header>
@@ -178,7 +175,14 @@
                   image search.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li>
+                    <button
+                      class="button"
+                      onclick="contents('Google Search Clone', 'My CS50 project 0 of replicating the Google.com webpage with HTML and CSS including some features like advanced search and image search.', 'www.youtube.com/embed/lL6R3wVv-lM?si=aYqJfKawcdqFxH6A', 'github.com/KarthiAKPS/Google-Search-Clone.git', 'karthiakps.github.io/Google-Search-Clone/')"
+                    >
+                      More
+                    </button>
+                  </li>
                 </ul>
               </article>
               <article>
@@ -199,7 +203,14 @@
                   adding pages , editing entries and prompt to show random page.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li>
+                    <button
+                      class="button"
+                      onclick="contents('Wikipedia Model', 'My CS50 project 1 of simple clone of the wikipedia webpage with Python and Django framework including some features like adding pages , editing entries and prompt to show random page.', 'www.youtube.com/embed/DhZeSfDb3Dg?si=cQI0XpgQeLqaqh_m', 'github.com/KarthiAKPS/Wikipedia-clone.git', 'link')"
+                    >
+                      More
+                    </button>
+                  </li>
                 </ul>
               </article>
               <article>
@@ -220,7 +231,14 @@
                   , bidding for items and and many other features.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li>
+                    <button
+                      class="button"
+                      onclick="contents('Auctions Website', 'My CS50 project 2 of simple Auction website with Python and Django framework including some features like adding new items , bidding for items and and many other features.', 'www.youtube.com/embed/aCy6-XzXv5E?si=MlaH-KEY4977I-zS', 'github.com/KarthiAKPS/Auction-website-clone.git', 'auction-website-clone-aj5nn18ku-karthiakps.vercel.app/')"
+                    >
+                      More
+                    </button>
+                  </li>
                 </ul>
               </article>
               <article>
@@ -241,7 +259,14 @@
                   animated using CSS.
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li>
+                    <button
+                      class="button"
+                      onclick="contents('Mail Client', 'My CS50 project 3 of simple Mail Client which uses a single page application created using JavaScript and Styled and animated using CSS.', 'www.youtube.com/embed/tFoLy3wLF6c?si=4Lku3MuxkfX7fWuF', 'github.com/KarthiAKPS/mail.git', 'link')"
+                    >
+                      More
+                    </button>
+                  </li>
                 </ul>
               </article>
               <article>
@@ -263,12 +288,20 @@
                   and commenting on posts, following individuals you want, etc,
                 </p>
                 <ul class="actions">
-                  <li><a href="#" class="button">More</a></li>
+                  <li>
+                    <button
+                      class="button"
+                      onclick="contents('Social Media Web Application', 'My CS50 project 4 of Socia Network Application I created which uses Django, JavaScript, and Styled using CSS. It has functionalities like posting pictures, and texts, liking posts and commenting on posts, following individuals you want, etc,', 'www.youtube.com/embed/EniYmkM_EwY?si=8pyrobfFWrH7P0Uc', 'github.com/KarthiAKPS/Network.git', 'link')"
+                    >
+                      More
+                    </button>
+                  </li>
                 </ul>
               </article>
             </div>
           </section>
         </div>
+
         <div class="img-cont" id="img-cont">
           <img id="myImg" width="100%" src="" alt="image" />
           <img
@@ -277,18 +310,51 @@
             onclick="backClick()"
           />
         </div>
+
+        <div class="proj-more" id="projMore">
+          <a href="#" id="back" onclick="backClick()">Back to home</a>
+          <h1 class="header1" id="header1">header</h1>
+          <div class="vplayer">
+            <div id="container">
+              <iframe
+                class="responsive-iframe"
+                id="vPlayer"
+                src=""
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <p class="contents" id="contents">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut tempore
+            veritatis dignissimos facilis consequuntur mollitia modi aliquam
+            similique odit deserunt magnam repellat in perferendis, amet
+            provident omnis nemo dolorem soluta.
+          </p>
+          <a
+            class="button"
+            href="www.link.com"
+            class="links"
+            id="links1"
+            target="_blank"
+            >Github Code</a
+          >
+          <a
+            class="button"
+            href="www.link.com"
+            class="links"
+            id="links2"
+            target="_blank"
+            >Website Link</a
+          >
+        </div>
       </div>
 
       <!-- Sidebar -->
       <div id="sidebar">
         <div class="inner">
-          <!-- Search -->
-          <section id="search" class="alt">
-            <form method="post" action="#">
-              <input type="text" name="query" id="query" placeholder="Search" />
-            </form>
-          </section>
-
           <!-- Menu -->
           <nav id="menu">
             <header class="major">
@@ -301,8 +367,8 @@
               <li>
                 <span class="opener">Shortcuts</span>
                 <ul>
-                  <li><a href="#">About me</a></li>
-                  <li><a href="#">Projects</a></li>
+                  <li><a href="#abt-me">About me</a></li>
+                  <li><a href="#projects">Projects</a></li>
                   <li>
                     <a href="contact details.html">Contact information</a>
                   </li>
@@ -399,6 +465,7 @@
       var other_objects = document.getElementById("inner");
       var imgCont = document.getElementById("img-cont");
       var myimg = document.getElementById("myImg");
+      var proj = document.getElementById("projMore");
 
       function imgClick(file) {
         myimg.src = file;
@@ -408,8 +475,42 @@
       }
 
       function backClick() {
+        proj.style.display = "none";
         imgCont.style.display = "none";
         other_objects.style.display = "block";
+      }
+
+      function contents(head, summary, yt, git, link) {
+        const myAnchorElement1 = document.querySelector("#links1");
+        const myAnchorElement2 = document.querySelector("#links2");
+        const myVideoElement = document.querySelector("#vPlayer");
+
+        const srcAttribute = myVideoElement.getAttribute("src");
+
+        const updatedSrcAttribute = "https://" + yt;
+
+        myAnchorElement1.removeAttribute("base");
+        if (myAnchorElement2) {
+          myAnchorElement2.removeAttribute("base");
+        }
+
+        document.querySelector("#header1").innerHTML = head;
+        myVideoElement.setAttribute("src", updatedSrcAttribute);
+        document.querySelector("#contents").innerHTML = summary;
+        document.querySelector("#links1").href = "https://" + git;
+        if (myAnchorElement2) {
+          if (link != "link") {
+            document.querySelector("#links2").href = "https://" + link;
+            document.querySelector("#links2").style.display = "block";
+          } else {
+            if (myAnchorElement2) {
+              document.querySelector("#links2").style.display = "none";
+            }
+          }
+        }
+
+        other_objects.style.display = "none";
+        proj.style.display = "block";
       }
     </script>
   </body>

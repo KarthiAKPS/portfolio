@@ -3743,3 +3743,31 @@ iframe:hover {
 #vtitle {
   margin-top: 20px;
 }
+
+#projMore {
+  display: none;
+  width: 80%;
+  position: relative;
+  left: 10%;
+}
+
+.vplayer {
+  position: relative;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+#back {
+  top: 4vh;
+  position: relative;
+}
+
+#header1 {
+  margin-top: 10%;
+}
+
+#links2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 150px;
+}
