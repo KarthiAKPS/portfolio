@@ -3476,11 +3476,11 @@ button:disabled,
   display: block;
   margin: 0 0 2em 4em;
   width: 50%;
+  max-width: 50vh;
 }
 
 #banner .image img {
-  transform: translate(50%);
-  height: 100%;
+  max-height: 100%;
   border-radius: 50%;
   -moz-object-fit: cover;
   -webkit-object-fit: cover;
@@ -3490,7 +3490,7 @@ button:disabled,
   -webkit-object-position: center;
   -ms-object-position: center;
   object-position: center;
-  width: 50%;
+  max-width: 100%;
 }
 
 @media screen and (orientation: portrait) {
@@ -3680,7 +3680,7 @@ iframe:hover {
   top: 50%;
   display: none;
   background-color: orange;
-  width: 200px;
+  width: 30%;
   border-radius: 10px;
   padding: 10px;
   color: white;
@@ -3694,22 +3694,17 @@ iframe:hover {
   display: block;
 }
 
-#inner {
-  display: block;
-}
-
 #flex-container {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 5em;
+  gap: 5%;
   justify-content: space-evenly;
   align-content: center;
 }
 
 #flex-items {
-  max-width: 25%;
-  max-height: 33%;
+  width: 300px;
 }
 
 #cls-button {
@@ -3737,7 +3732,7 @@ iframe:hover {
   padding-bottom: 56.25%;
 }
 
-.responsive-iframe{
+.responsive-iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -3745,6 +3740,6 @@ iframe:hover {
   height: 100%;
 }
 
-#vtitle{
+#vtitle {
   margin-top: 20px;
 }
