@@ -133,6 +133,7 @@ table {
 
 body {
   -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 mark {
@@ -155,7 +156,7 @@ textarea {
 }
 
 /* Basic */
-@-ms-viewport {
+@viewport {
   width: device-width;
 }
 
@@ -3724,7 +3725,7 @@ iframe:hover {
   display: none;
 }
 
-#container {
+.container {
   display: block;
   position: relative;
   overflow: hidden;
@@ -3740,7 +3741,7 @@ iframe:hover {
   height: 100%;
 }
 
-#vtitle {
+.vtitle {
   margin-top: 20px;
 }
 
